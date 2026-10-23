@@ -127,7 +127,11 @@ internal class PickerDialog : BottomSheetDialogFragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(
-            if (showSearch) R.layout.sns_picker_dialog else R.layout.sns_picker_dialog_no_search,
+            if (showSearch) {
+                com.sumsub.idensic.R.layout.sns_picker_dialog
+            } else {
+                com.sumsub.idensic.R.layout.sns_picker_dialog_no_search
+            },
             container,
             false
         )

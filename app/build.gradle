@@ -15,8 +15,8 @@ android {
         minSdkVersion 23
         targetSdkVersion 35
         compileSdkVersion 35
-        versionCode 14600
-        versionName "1.46.0"
+        versionCode 14700
+        versionName "1.47.0"
         multiDexEnabled true
 
         buildConfigField("String", "DEMO_VERSION", "\"${versionName}\"")
@@ -57,13 +57,13 @@ android {
 
 dependencies {
     def nav_version = "2.7.6"
-    def sdk_version = "1.46.0"
+    def sdk_version = "1.47.0"
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.20"
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'com.google.mlkit:barcode-scanning:17.2.0'
+    implementation 'com.google.mlkit:barcode-scanning:17.3.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:4.11.0'
     implementation 'com.otaliastudios:cameraview:2.7.2'
 

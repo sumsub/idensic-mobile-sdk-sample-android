@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sumsub.sns.core.widget.SNSBottomSheetView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.sumsub.sns.core.widget.SNSToolbarView
+            android:id="@+id/sns_toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sns_margin_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sns_list"
+            android:layout_width="0dp"
+            android:paddingBottom="@dimen/sns_margin_huge"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sns_margin_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sns_toolbar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.sumsub.sns.core.widget.SNSBottomSheetView>
